@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Анастасия Михайлова](https://up.htmlacademy.ru/htmlcss/20/user/597409).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Рожков](https://htmlacademy.ru/profile/artrozhe).
 
 ---
 
