@@ -35,9 +35,9 @@
         </nav>
     </header>
 
-    <main class="catalog-monopods">
+    <main>
     	<h1>Моноподы для селфи</h1>
-    	<ul class="way-to-monopods">
+    	<ul class="breadcrumbs">
     		<li><a href="index.html">Главная</a></li>
     		<li><a href="catalog.html">Каталог товаров</a></li>
     		<li>Моноподы для селфи</li>
@@ -55,51 +55,67 @@
     			<li><button>По типу</button></li>
                 <li><button>По популярности</button></li>
     		</ul>
+    		<ul class="sort-arrows">
+    			<li><button class="up"></button></li>
+    			<li><button class="down active"></button></li>
+    		</ul>
     	</div>
 
-    	<section class="monopods-items">
+    	<section class="catalog-items">
     		<h2 class="visually-hidden">Каталог моноподов для селфи</h2>
     		<figure>
     			<img src="img/mono-1.jpg" alt="Любительская селфи-палка">
+    			<div class="item-buttons">
+    				<button class="to-basket">В корзину</button>
+    				<button class="to-compare">Добавить к сравнению</button>
+    			</div>
     			<figcaption>
     				<span class="mono-name"><a href="mono-1.html">Любительская селфи-палка</a></span>
     				<span class="mono-cost">500 руб.</span>
-    				<button class="to-basket">В корзину</button>
-    				<button class="to-compare">Добавить к сравнению</button>
     			</figcaption>
     		</figure>
     		<figure>
     			<img src="img/mono-2.jpg" alt="Профессиональная селфи-палка">
+    			<div class="item-buttons">
+    				<button class="to-basket">В корзину</button>
+    				<button class="to-compare">Добавить к сравнению</button>
+    			</div>
     			<figcaption>
     				<span class="mono-name"><a href="mono-2.html">Профессиональная селфи-палка</a></span>
     				<span class="mono-cost">1500 руб.</span>
-    				<button class="to-basket">В корзину</button>
-    				<button class="to-compare">Добавить к сравнению</button>
     			</figcaption>
     		</figure>
     		<figure>
     			<img src="img/mono-3.jpg" alt="Непотопляемая селфи-палка">
+    			<div class="item-buttons">
+    				<button class="to-basket">В корзину</button>
+    				<button class="to-compare">Добавить к сравнению</button>
+    			</div>
     			<figcaption>
     				<span class="mono-name"><a href="mono-3.html">Непотопляемая селфи-палка</a></span>
     				<span class="mono-cost">2500 руб.</span>
-    				<button class="to-basket">В корзину</button>
-    				<button class="to-compare">Добавить к сравнению</button>
     			</figcaption>
     		</figure>
     		<figure>
     			<img class="new" src="img/mono-4.jpg" alt="Селфи палка Следуй за мной">
+    			<div class="item-buttons">
+    				<button class="to-basket">В корзину</button>
+    				<button class="to-compare">Добавить к сравнению</button>
+    			</div>
     			<figcaption>
     				<span class="mono-name"><a href="mono-4.html">Селфи-палка "Следуй за мной"</a></span>
     				<span class="mono-cost">4900 руб.</span>
-    				<button class="to-basket">В корзину</button>
-    				<button class="to-compare">Добавить к сравнению</button>
     			</figcaption>
-    			<span class="button button-back">Назад</span>
-    			<span class="button number-button active">1</span>
-    			<span class="button number-button">2</span>
-    			<span class="button number-button">3</span>
-    			<span class="button button-next">Вперед</span>
     		</figure>
+    		<div class="catalog-pagination">
+    			<a href="#">Назад</a>
+    			<ul class="pagination-pages">
+    				<li><a>1</a></li>
+    				<li><a href="items-page-two">2</a></li>
+    				<li><a href="items-page-three">3</a></li>
+    			</ul>
+    			<a href="#">Вперед</a>
+    		</div>
     	</section>
     </main>
 
@@ -126,7 +142,7 @@
             		<li class="twitter"><a href="#"></a></li>
             </ul>
             <p class="footer-copyright">
-            		<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+            		<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
             </p>
     	</footer>
 
