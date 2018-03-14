@@ -9,14 +9,23 @@
   	 <header class="main-header">
     	<nav class="main-navigation">
         	<a class="main-header-logo" href="index.html">DEVICE</a>
-    	    <!--form-->
+    	    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+    	    	<label for="search" class="visually-hidden">Поиск по сайту</label>
+    	    	<input type="search" name="search" id="search" placeholder="Поиск по сайту">
+    	    </form>
             <ul class="user-navigation">
             	<li class="user-name"><a href="profile.html">Валентин Петухов</a></li>
-        	    <li class="login-link">Выйти</li>
+        	    <li class="login-link">
+        	    	<button>Выйти</button>
+        	    </li>
             </ul>
             <ul class="help-navigation">
-            	<li class="compare">Сравнить</li>
-            	<li class="basket">Корзина</li>
+            	<li class="compare">
+            		<button>Сравнить</button>
+            	</li>
+            	<li class="basket">
+            		<a href="basket.html">Корзина</a>
+            	</li>
             </ul>
             <ul class="site-navigation">
             	<li><a href="catalog.html">Каталог товаров</a></li>
@@ -44,8 +53,51 @@
     	</ul>
     	<aside class="filter">
     		<h2>Фильтр:</h2>
-    		<!--form-->
-    		<button class="button-show">Показать</button>
+    		<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+    	    	<p class="filter-field">
+    	    		<label for="cost">Стоимость</label>
+    	    		<input type="range" name="cost" id="cost" min="0" max="10000" step="100">
+    	    	</p>
+    	    	<fieldset>
+    	    		<legend>Цвет</legend>
+    	    		<ul>
+    	    		    <li class="filter-field">
+    	    			    <label for="black">Черный</label>
+    	    			    <input type="checkbox" checked name="black" id="black" class="visually-hidden">
+    	    	        </li>
+    	    	        <li class="filter-field">
+    	    	    	    <label for="white">Белый</label>
+    	    		        <input type="checkbox" name="white" id="white" class="visually-hidden">
+    	    		    </li>
+    	    		    <li class="filter-field">
+    	    			    <label for="blue">Синий</label>
+    	    			    <input type="checkbox" checked name="blue" id="blue" class="visually-hidden">
+    	    		    </li>
+    	    		    <li class="filter-field">
+    	    			    <label for="red">Красный</label>
+    	    		        <input type="checkbox" name="red" checked id="red" class="visually-hidden">
+    	    		    </li>
+    	    		    <li class="filter-field">
+    	    			    <label for="pink">Розовый</label>
+    	    		        <input type="checkbox" name="pink" id="pink" class="visually-hidden">
+    	    		    </li>
+    	    	    </ul>
+    	    	</fieldset>
+    	    	<fieldset class="filter-field">
+    	    		<legend>Bluetooth</legend>
+    	    		<ul>
+    	    			<li class="filter-field">
+    	    			    <label for="yes">Есть</label>
+    	    		        <input type="radio" name="bluetooth-presense" id="yes" checked class="visually-hidden">
+    	    		    </li>
+    	    		    <li class="filter-field">
+    	    			    <label for="no">Нет</label>
+    	    		        <input type="radio" name="bluetooth-presense" id="no" class="visually-hidden">
+    	    	        </li>
+    	    	    </ul>
+    	    	</fieldset>
+    	    </form>
+    		<button type="submit" class="button">Показать</button>
     	</aside>
 
     	<div class="sorting">
@@ -123,11 +175,17 @@
     		<a class="footer-logo" href="index.html">DEVICE</a>
     		<ul class="footer-user-navigation">
     		 	<li class="footer-user-name"><a href="profile">Валентин Петухов</a></li>
-        	    <li class="footer-login-link">Выйти</li>
+        	    <li class="footer-login-link">
+        	    	<button>Выйти</button>
+        	    </li>
             </ul>
             <ul class="footer-help-navigation">
-            	<li class="footer-compare">Сравнить</li>
-            	<li class="footer-basket">Корзина</li>
+            	<li class="footer-compare">
+            		<button>Сравнить</button>
+            	</li>
+            	<li class="footer-basket">
+            		<a href="basket.html">Корзина</a>
+            	</li>
             </ul>	
             <span class="address">г. Москва, ул. Строителей, 15</span>
             <span class="tel">Тел.: +7 (495) 495-95-95</span>

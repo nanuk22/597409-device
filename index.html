@@ -8,13 +8,22 @@
     <header class="main-header">
     	<nav class="main-navigation">
         	<a class="main-header-logo">DEVICE</a>
-    	    <!--form-->
+    	    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+    	    	<label for="search" class="visually-hidden">Поиск по сайту</label>
+    	    	<input type="search" name="search" id="search" placeholder="Поиск по сайту">
+    	    </form>
             <ul class="user-navigation">
-        	    <li class="login-link">Войти</li>
+        	    <li class="login-link">
+                    <a class="login-link" href="login.html">Войти</a>
+                </li>
             </ul>
             <ul class="help-navigation">
-            	<li class="compare">Сравнить</li>
-            	<li class="basket">Корзина</li>
+            	<li class="compare">
+            		<button>Сравнить</button>
+            	</li>
+            	<li class="basket">
+            		<a href="basket.html">Корзина</a>
+            	</li>
             </ul>
             <ul class="site-navigation">
             	<li>
@@ -195,31 +204,50 @@
     	<section class="contacts">
     		<h2>Контакты</h2>
     		<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-    		<a><img src="img/map.jpg" width="560" height="222" alt="Как до нас добраться">Карта</a>
+    		<a><img src="img/map.jpg" width="560" height="222" alt="Как до нас добраться">Адрес компании: г. Москва, ул. Строителей, 15</a>
     		<button class="write-button">Напишите нам</button>
     	</section>
 
     	<section class="modal modal-write">
     		<h2 class="visually-hidden">Форма отправки</h2>
-    		<!--form-->
-    		<button class="send-button">Отправить</button>
-    		<span class="modal-close">x</span>
+    		<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+    			<p class="write-field">
+    				<label for="name">Ваше имя:</label>
+    				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+    			</p>
+    			<p class="write-field">
+    			    <label for="email">Ваш e-mail:</label>
+    			    <input type="email" name="email" id="email" placeholder="email@example.com">
+    			</p>
+    			<p>
+    				<label for="letter">Текст письма:</label>
+    			    <textarea name="letter" id="letter" rows="6" placeholder="В свободной форме"></textarea>
+    			</p>
+    		</form>
+    		<button type="submit" class="button">Отправить</button>
+    		<button class="modal-close" type="button">Закрыть</button>
     	</section>
 
     	<section class="modal modal-map">
     		<h2 class="visually-hidden">Как добраться</h2>
-    		<span class="modal-close">x</span>
+    		<button class="modal-close" type="button">Закрыть</button>
     	</section>
     </main>	
 
     	<footer class="main-footer">
     		<a class="footer-logo" href="index.html">DEVICE</a>
     		 <ul class="footer-user-navigation">
-        	    <li class="footer-login-link">Войти</li>
+        	    <li class="footer-login-link">
+        	    	<a class="footer-login-link" href="login.html">Войти</a>
+        	    </li>
             </ul>
             <ul class="footer-help-navigation">
-            	<li class="footer-compare">Сравнить</li>
-            	<li class="footer-basket">Корзина</li>
+            	<li class="footer-compare">
+            		<button>Сравнить</button>
+            	</li>
+            	<li class="footer-basket">
+            		<a href="basket.html">Корзина</a>
+            	</li>
             </ul>   	
             <span class="address">г. Москва, ул. Строителей, 15</span>
             <span class="tel">Тел.: +7 (495) 495-95-95</span>
