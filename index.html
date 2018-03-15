@@ -9,8 +9,8 @@
     	<nav class="main-navigation">
         	<a class="main-header-logo">DEVICE</a>
     	    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-    	    	<label for="search" class="visually-hidden">Поиск по сайту</label>
-    	    	<input type="search" name="search" id="search" placeholder="Поиск по сайту">
+    	    	<input type="search" name="search" id="header-search" placeholder="Поиск по сайту">
+    	    	<button type="submit" class="header-search-button">Найти</button>
     	    </form>
             <ul class="user-navigation">
         	    <li class="login-link">
@@ -19,7 +19,7 @@
             </ul>
             <ul class="help-navigation">
             	<li class="compare">
-            		<button>Сравнить</button>
+            		<a href="compare.html">Сравнить</a>
             	</li>
             	<li class="basket">
             		<a href="basket.html">Корзина</a>
@@ -180,7 +180,7 @@
     	</section>	
 
     	<section class="logos">
-    		<h2 class="visually-hidden">Логотипы</h2>
+    		<h2 class="visually-hidden">Бренды</h2>
     		<ul class="logo-list">
     			<li><img src="img/logo-1.png" width="260" height="100" alt="dji"></li>
     			<li><img src="img/logo-2.png" width="260" height="100" alt="SP.Gadgets"></li>
@@ -212,16 +212,16 @@
     		<h2 class="visually-hidden">Форма отправки</h2>
     		<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
     			<p class="write-field">
-    				<label for="name">Ваше имя:</label>
-    				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+    				<label for="modal-form-name">Ваше имя:</label>
+    				<input type="text" name="name" id="modal-form-name" placeholder="Имя Фамилия">
     			</p>
     			<p class="write-field">
-    			    <label for="email">Ваш e-mail:</label>
-    			    <input type="email" name="email" id="email" placeholder="email@example.com">
+    			    <label for="modal-form-email">Ваш e-mail:</label>
+    			    <input type="email" name="email" id="modal-form-email" placeholder="email@example.com">
     			</p>
     			<p>
-    				<label for="letter">Текст письма:</label>
-    			    <textarea name="letter" id="letter" rows="6" placeholder="В свободной форме"></textarea>
+    				<label for="modal-form-letter">Текст письма:</label>
+    			    <textarea name="letter" id="modal-form-letter" rows="6" placeholder="В свободной форме"></textarea>
     			</p>
     		</form>
     		<button type="submit" class="button">Отправить</button>
@@ -243,7 +243,7 @@
             </ul>
             <ul class="footer-help-navigation">
             	<li class="footer-compare">
-            		<button>Сравнить</button>
+            		<a href="compare.html">Сравнить</a>
             	</li>
             	<li class="footer-basket">
             		<a href="basket.html">Корзина</a>
