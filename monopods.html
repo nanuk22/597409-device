@@ -56,7 +56,13 @@
     		<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
     	    	<fieldset class="filter-field">
     	    		<label for="cost-field">Стоимость</label>
-    	    		<div class="cost-range"></div>
+    	    		<div class="range-controls"> 
+                        <div class="scale"> 
+                            <div class="bar"></div> 
+                        </div> 
+                        <div class="toggle min-toggle"></div> 
+                        <div class="toggle max-toggle"></div> 
+                    </div>
     	    		<input type="text" id="cost-field" readonly>
     	    	</fieldset>
     	    	<fieldset>
@@ -109,8 +115,8 @@
                 <li><a href="#">По популярности</a></li>
     		</ul>
     		<ul class="sort-arrows">
-    			<li><a href="#"></a></li>
-    			<li><a href="#"></a></li>
+    			<li><a href="#" aria-label="По возрастанию"></a></li>
+    			<li><a href="#" aria-label="По убыванию"></a></li>
     		</ul>
     	</div>
 
@@ -163,9 +169,9 @@
     		<div class="catalog-pagination">
     			<a href="#">Назад</a>
     			<ul class="pagination-pages">
-    				<li><a>1</a></li>
-    				<li><a href="items-page-two">2</a></li>
-    				<li><a href="items-page-three">3</a></li>
+    				<li><a aria-label="Первая страница">1</a></li>
+    				<li><a href="items-page-two" aria-label="Вторая страница">2</a></li>
+    				<li><a href="items-page-three" aria-label="Третья страница">3</a></li>
     			</ul>
     			<a href="#">Вперед</a>
     		</div>
@@ -173,37 +179,42 @@
     </main>
 
     <footer class="main-footer">
-    		<a class="footer-logo" href="index.html">DEVICE</a>
-    		<ul class="footer-user-navigation">
-    		 	<li class="footer-user-name"><a href="profile">Валентин Петухов</a></li>
-        	    <li class="footer-login-link">
-        	    	<button>Выйти</button>
-        	    </li>
-            </ul>
-            <ul class="footer-help-navigation">
-            	<li class="footer-compare">
-            		<a href="compare.html">Сравнить</a>
-            	</li>
-            	<li class="footer-basket">
-            		<a href="basket.html">Корзина</a>
-            	</li>
-            </ul>	
-            <span class="address">г. Москва, ул. Строителей, 15</span>
-            <span class="tel">Тел.: +7 (495) 495-95-95</span>
-            <ul class="footer-nav">
+    		<div class="footer-left">
+    			<a class="footer-logo" href="index.html">DEVICE</a>
+    			<span class="address">г. Москва, ул. Строителей, 15</span>
+    		</div>
+    		<div class="footer-center">	
+    			<ul class="footer-nav">
             		<li><a href="delivery.html">Доставка</a></li>
             	    <li><a href="guarantee.html">Гарантия</a></li>
             	    <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <ul class="social-buttons">
-            		<li class="facebook"><a href="#"></a></li>
-            		<li class="ig"><a href="#"></a></li>
-            		<li class="twitter"><a href="#"></a></li>
-            </ul>
-            <p class="footer-copyright">
+                </ul>
+                <ul class="social-buttons">
+            		<li class="facebook"><a href="#" aria-label="Мы в Facebook"></a></li>
+            		<li class="ig"><a href="#" aria-label="Мы в Instagram"></a></li>
+            		<li class="twitter"><a href="#" aria-label="Мы в Twitter"></a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+            	<ul class="footer-user-navigation">
+    		 	    <li class="footer-user-name"><a href="profile.html">Валентин Петухов</a></li>
+        	        <li class="footer-login-link">
+        	    	    <button>Выйти</button>
+        	        </li>
+                </ul>
+                <ul class="footer-help-navigation">
+            	    <li class="footer-compare">
+            		    <a href="compare.html">Сравнить</a>
+            	    </li>
+            	    <li class="footer-basket">
+            		    <a href="basket.html">Корзина</a>
+            	    </li>
+                </ul>   	
+                <span class="tel">Тел.: +7 (495) 495-95-95</span>
+                <p class="footer-copyright">
             		<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
-            </p>
+                </p>
+            </div>
     	</footer>
-
 
   </body>
