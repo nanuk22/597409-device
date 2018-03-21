@@ -3,32 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header>
     	<nav class="main-navigation">
-        	<a class="main-header-logo">DEVICE</a>
-    	    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-    	    	<input type="search" name="search" id="header-search" placeholder="Поиск по сайту">
-    	    	<button type="submit" class="header-search-button">Найти</button>
-    	    </form>
-            <ul class="user-navigation">
-        	    <li class="login-link">
-                    <a class="login-link" href="login.html">Войти</a>
-                </li>
-            </ul>
-            <ul class="help-navigation">
-            	<li class="compare">
-            		<a href="compare.html">Сравнить</a>
-            	</li>
-            	<li class="basket">
-            		<a href="basket.html">Корзина</a>
-            	</li>
-            </ul>
-            <ul class="site-navigation">
-            	<li>
-            		<a href="catalog.html">Каталог товаров</a>
-            		<ul class="catalog-menu">
+
+    		<div class="header-left">
+        	    <a class="main-header-logo">DEVICE</a>
+    	        <form action="https://  echo.htmlacademy.ru" method="post">
+    	    	    <input type="search" name="search" id="header-search" placeholder="Поиск по сайту">
+    	    	    <button type="submit" class="header-search-button">Найти</button>
+    	        </form>
+    	        <div>
+            		<a href="catalog.html" class="header-nav">Каталог товаров</a>
+            		<ul>
             	     	<li><a href="virtuality.html">Виртуальная реальность</a></li>
             	        <li><a href="monopods.html">Моноподы для селфи</a></li>
             	        <li><a href="cameras.html">Экшн-камеры</a></li>
@@ -36,11 +26,32 @@
             	        <li><a href="watch.html">Умные часы</a></li>
             	        <li><a href="copters.html">Квадрокоптеры</a></li>
                     </ul>
-                </li>
-            	<li><a href="delivery.html">Доставка</a></li>
-            	<li><a href="guarantee.html">Гарантия</a></li>
-            	<li><a href="contacts.html">Контакты</a></li>
-            </ul>
+                </div>
+            </div>
+
+            <div class="header-center">
+            	<ul class="user-navigation">
+        	        <li class="login-link">
+                        <a class="login-link" href="login.html">Войти</a>
+                    </li>
+                </ul>
+                <ul class="site-navigation">
+            	   	<li><a href="delivery.html" class="header-nav">Доставка</a></li>
+            	    <li><a href="guarantee.html" class="header-nav">Гарантия</a></li>
+            	</ul>
+            </div>
+
+            <div class="header-right">
+                <ul class="help-navigation">
+            	    <li class="compare">
+            		    <a href="compare.html">Сравнить</a>
+            	    </li>
+            	    <li class="basket">
+            		    <a href="basket.html">Корзина</a>
+            	    </li>
+                </ul>
+                <p><a href="contacts.html" class="header-nav">Контакты</a></p>
+            </div>
         </nav>
     </header>
 
@@ -158,9 +169,9 @@
     		</ul>
     	</section>
 
-    	<section class="Services">
+    	<section class="services">
     		<h2 class="visually-hidden">Сервисы</h2>
-    		<ul class="delivery-list">
+    		<ul class="services-list">
     			<li><button class="delivery-button active">Доставка</button></li>
     			<li><button class="guarantee-button">Гарантия</button></li>
     			<li><button class="credit-button">Кредит</button></li>
@@ -193,6 +204,7 @@
     		<h2>О нас</h2>
     		<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
     		<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <br>
     		<ul>
     			<li>Деловые линии</li>
     			<li>Автотрейдинг</li>
@@ -208,19 +220,19 @@
     		<button class="write-button">Напишите нам</button>
     	</section>
 
-    	<section class="modal modal-write">
+    	<section class="modal modal-write visually-hidden">
     		<h2 class="visually-hidden">Форма отправки</h2>
     		<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-    			<p class="write-field">
-    				<label for="modal-form-name">Ваше имя:</label>
+    			<p class="write-field left-field">
+    				<p><label for="modal-form-name">Ваше имя:</label></p>
     				<input type="text" name="name" id="modal-form-name" placeholder="Имя Фамилия">
     			</p>
-    			<p class="write-field">
-    			    <label for="modal-form-email">Ваш e-mail:</label>
+    			<p class="write-field right-field">
+    			    <p><label for="modal-form-email">Ваш e-mail:</label></p>
     			    <input type="email" name="email" id="modal-form-email" placeholder="email@example.com">
     			</p>
-    			<p>
-    				<label for="modal-form-letter">Текст письма:</label>
+    			<p class="letter-field">
+    				<p><label for="modal-form-letter">Текст письма:</label></p>
     			    <textarea name="letter" id="modal-form-letter" rows="6" placeholder="В свободной форме"></textarea>
     			</p>
     		</form>
@@ -228,7 +240,7 @@
     		<button class="modal-close" type="button" aria-label="Закрыть"></button>
     	</section>
 
-    	<section class="modal modal-map">
+    	<section class="modal modal-map visually-hidden">
     		<h2 class="visually-hidden">Как добраться</h2>
     		<img src="img/map-big.jpg" width="960" height="559" alt="Адрес компании: г. Москва, ул. Строителей, 15">
     		<button class="modal-close" type="button" aria-label="Закрыть"></button>
@@ -238,7 +250,7 @@
     	<footer class="main-footer">
     		<div class="footer-left">
     			<a class="footer-logo" href="index.html">DEVICE</a>
-    			<span class="address">г. Москва, ул. Строителей, 15</span>
+    			<p class="address">г. Москва, ул. Строителей, 15</p>
     		</div>
     		<div class="footer-center">	
     			<ul class="footer-nav">
