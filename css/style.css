@@ -99,6 +99,7 @@ header {
     height: 49px;
     border: 3px solid #000000;
     background-color: rgb(247, 226, 150);
+    outline: inherit;
 }
 
 .main-navigation .header-search-button:hover {
@@ -261,6 +262,7 @@ header {
 	border: none;
 	background-color: rgba(255, 255, 255, 0);
 	text-align: center;
+	outline: inherit;
 }
 
 .services-list button:focus {
@@ -396,6 +398,7 @@ header {
     letter-spacing: 0.2em;
     border: none;
     background-color: rgba(255, 255, 255, 1);
+    outline: inherit;
 }
 
 .contacts button:active {
@@ -494,6 +497,7 @@ header {
     letter-spacing: 0.2em;
     border: none;
     background-color: rgba(255, 255, 255, 1);
+    outline: inherit;
 }
 
 .modal-write .button:active {
@@ -781,6 +785,7 @@ main ul {
     letter-spacing: 0.2em;
     border: none;
     background-color: rgba(255, 255, 255, 0);
+    outline: inherit;
 }
 
 .filter .button:active {
@@ -866,6 +871,7 @@ main ul {
     letter-spacing: 0.2em;
     border: none;
     background-color: rgba(255, 255, 255, 0);
+    outline: inherit;
 }
 
 .catalog-items .to-basket:active {
@@ -893,6 +899,7 @@ main ul {
 	background-color: rgba(255, 255, 255, 0);
 	font-size: 13px;
 	opacity: 0.5;
+    outline: inherit;
 }
 
 .catalog-items .to-compare:hover {
@@ -952,4 +959,5 @@ main ul {
 .footer-login-link button {
 	border: none;
 	background-color: rgba(155, 255, 255, 0);
+	outline: inherit;
 }
