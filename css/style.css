@@ -18,7 +18,7 @@
     font-family: "Open Sans";
     src: url("fonts/opensans.woff") format("woff"),
          url("fonts/opensans.woff2") format("woff2");
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;     
 }
 
@@ -26,7 +26,7 @@
     font-family: "Open Sans";
     src: url("fonts/opensanslight.woff") format("woff"),
          url("fonts/opensanslight.woff2") format("woff2");
-    font-weight: bold;
+    font-weight: 300;
     font-style: normal;     
 }
 
@@ -172,34 +172,83 @@ header {
 }
 
 
-.popular-items .button {
+.button {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-}
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: inherit;
+ }
 
 
-.popular-items .button:active {
+.button:active {
     opacity: 0.3;
+
 }
 
-.popular-items .button::before {
+.button::before {
+	content: "";
+	display: block;
+	width: 260px;
+    height: 8px;
+    background-color: rgb(240, 197, 46);
+    z-index: -1;
+}    
+
+.button:hover::before,
+.button:focus::before,
+.button:active::before {
+	transform: scaleY(5);
+	transition-duration: 0.6s;
+	background-color: rgba(240, 197, 46, 1);
+}
+
+.slide-button::before {
 	content: "";
 	display: block;
 	width: 220px;
     height: 8px;
     background-color: rgb(240, 197, 46);
     z-index: -1;
-}    
+}
 
-.popular-items .button:hover::before,
-.popular-items .button:focus::before,
-.popular-items .button:active::before {
+.slide-button:hover::before,
+.slide-button:focus::before,
+.slide-button:active::before {
 	transform: scaleY(5);
 	transition-duration: 0.6s;
+} 
+
+.write-button {
+	border: none;
+	outline: inherit;
+	background-color: rgba(255, 255, 255, 0);
+	opacity: 1;
 }
+
+.write-button:active {
+	opacity: 1;
+}
+
+.write-button::before {
+	content: "";
+	display: block;
+	width: 200px;
+    height: 8px;
+    background-color: rgba(240, 197, 46, 1);
+    z-index: -1;
+}
+
+.write-button:hover::before,
+.write-button:focus::before,
+.write-button:active::before {
+	transform: scaleY(5);
+	transition-duration: 0.6s;
+	background-color: rgba(240, 197, 46, 1);
+}       
 
 .main-catalog {
 	list-style: none;
@@ -254,7 +303,7 @@ header {
     list-style: none;
 }
 
-.services-list button {
+.services-list .catalog-button {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: bold;
 	font-size: 18px;
@@ -265,11 +314,11 @@ header {
 	outline: inherit;
 }
 
-.services-list button:focus {
+.services-list .catalog-button:focus {
     color: rgb(247, 225, 132);
 }
 
-.services-list button::before {
+.services-list .catalog-button::before {
 	content: "";
 	display: block;
     width: 160px;
@@ -278,13 +327,13 @@ header {
     z-index: -1;
 }
 
-.services-list button:hover::before {
+.services-list .catalog-button:hover::before {
     transform: scaleY(5);
     transition-duration: 0.6s;
 }
 
-.services-list button:active::before,
-.services-list button:focus::before {
+.services-list .catalog-button:active::before,
+.services-list .catalog-button:focus::before {
     transform: scale(1.7, 5);
     transition-duration: 0.6s;
     background-color: #000000;
@@ -347,34 +396,6 @@ header {
     font-weight: bold;
 }
 
-.about-us .button {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
-
-.about-us .button:active {
-    opacity: 0.3;
-}
-
-.about-us .button::before {
-	content: "";
-	display: block;
-	width: 220px;
-    height: 8px;
-    background-color: rgb(240, 197, 46);
-    z-index: -1;
-}    
-
-.about-us .button:hover::before,
-.about-us .button:focus::before,
-.about-us .button:active::before {
-	transform: scaleY(5);
-	transition-duration: 0.6s;
-}
-
 .contacts {
     margin-right: 140px;
 }
@@ -388,37 +409,6 @@ header {
 .contacts p {
     width: 426px;
 	line-height: 30px;
-}
-
-.contacts button {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    border: none;
-    background-color: rgba(255, 255, 255, 1);
-    outline: inherit;
-}
-
-.contacts button:active {
-    opacity: 0.3;
-}
-
-.contacts button::before {
-	content: "";
-	display: block;
-	width: 220px;
-    height: 8px;
-    background-color: rgb(240, 197, 46);
-    z-index: -1;
-}    
-
-.contacts button:hover::before,
-.contacts button:focus::before,
-.contacts button:active::before {
-	transform: scaleY(5);
-	transition-duration: 0.6s;
 }
 
 .contacts img {
@@ -487,37 +477,6 @@ header {
 .modal-write textarea:invalid {
 	background-color: rgba(246, 218, 218, 0.5);
 	border: none;
-}
-
-.modal-write .button {
-	font-family: "Gilroy", Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    border: none;
-    background-color: rgba(255, 255, 255, 1);
-    outline: inherit;
-}
-
-.modal-write .button:active {
-    opacity: 0.3;
-}
-
-.modal-write .button::before {
-	content: "";
-	display: block;
-	width: 220px;
-    height: 8px;
-    background-color: rgb(240, 197, 46);
-    z-index: -1;
-}    
-
-.modal-write .button:hover::before,
-.modal-write .button:focus::before,
-.modal-write .button:active::before {
-	transform: scaleY(5);
-	transition-duration: 0.6s;
 }
 
 .modal-close {
@@ -776,38 +735,6 @@ main ul {
 
 }
 
-
-.filter .button {
-	font-family: "Gilroy", Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-    outline: inherit;
-}
-
-.filter .button:active {
-    opacity: 0.3;
-}
-
-.filter .button::before {
-	content: "";
-	display: block;
-	width: 220px;
-    height: 8px;
-    background-color: rgb(240, 197, 46);
-    z-index: -1;
-}    
-
-.filter .button:hover::before,
-.filter .button:focus::before,
-.filter .button:active::before {
-	transform: scaleY(5);
-	transition-duration: 0.6s;
-}
-
 .sorting {
 	height: 70px;
 	background-color: rgb(238, 238, 238);
@@ -861,37 +788,6 @@ main ul {
 
 .catalog-items figure:hover {
 
-}
-
-.catalog-items .to-basket {
-	font-family: "Gilroy", Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-    outline: inherit;
-}
-
-.catalog-items .to-basket:active {
-    opacity: 0.3;
-}
-
-.catalog-items .to-basket::before {
-	content: "";
-	display: block;
-	width: 220px;
-    height: 8px;
-    background-color: rgb(240, 197, 46);
-    z-index: -1;
-}    
-
-.catalog-items .to-basket:hover::before,
-.catalog-items .to-basket:focus::before,
-.catalog-items .to-basket:active::before {
-	transform: scaleY(5);
-	transition-duration: 0.6s;
 }
 
 .catalog-items .to-compare {
@@ -956,7 +852,7 @@ main ul {
 	opacity: 1;
 }
 
-.footer-login-link button {
+.footer-login-link .logout {
 	border: none;
 	background-color: rgba(155, 255, 255, 0);
 	outline: inherit;
