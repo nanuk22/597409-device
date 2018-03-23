@@ -185,7 +185,7 @@ header {
 
 
 .button:active {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 
 }
 
@@ -226,11 +226,11 @@ header {
 	border: none;
 	outline: inherit;
 	background-color: rgba(255, 255, 255, 0);
-	opacity: 1;
+	
 }
 
 .write-button:active {
-	opacity: 1;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .write-button::before {
