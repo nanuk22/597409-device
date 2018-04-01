@@ -63,12 +63,13 @@ header {
 	display: flex;
 	width: 100%;
 	align-items: flex-start;
+	justify-content: space-between;
 }
 
 .header-left {
-	align-self: flex-start;
 	position: relative;
-	width: 545px;
+	width: 440px;
+	padding-top: 5px;
 }
 
 .main-navigation .main-header-logo {
@@ -95,9 +96,8 @@ header {
     font-color: #ffffff;
     opacity: 0.3;
     outline: inherit;
-    margin-top: -10px;
-
-}
+    width: 355px;
+    }
 
 .main-navigation input:hover {
 	background-color: rgb(247, 226, 150);
@@ -113,11 +113,12 @@ header {
 }
 
 .main-navigation .header-search-button {
-	width: 85px;
-    height: 49px;
+	width: 79px;
+    height: 43px;
     border: 3px solid #000000;
     background-color: rgb(247, 226, 150);
     outline: inherit;
+    display: inline-block;
 }
 
 .main-navigation .header-search-button:hover {
@@ -132,14 +133,14 @@ header {
 }
 
 .catalog-header {
-	padding-top: 35px;
+	padding-top: 30px;
 }
 
 .header-hidden-list {
 	padding-left: 0;
-	min-width: 560px;
+	min-width: 555px;
 	display: flex;
-	z-index: 1;
+	justify-content: space-between;
 }
 
 .header-hidden-list ul {
@@ -150,22 +151,19 @@ header {
     list-style: none;
 }
 
-.left-hidden-list {
-	align-self: flex-start;
-}
-
 .left-hidden-list ul {
 	padding-left: 0;
-	width: 240px;
+	min-width: 190px;
 }
 
 .center-hidden-list ul {
 	padding-left: 0;
-	width: 200px;
+	min-width: 130px;
 } 
 
 .right-hidden-list ul {
 	padding-left: 0;
+	min-width: 120px;
 }
 
 .user-navigation .logout-link {
@@ -178,8 +176,6 @@ header {
 
 .user-navigation li {
 	display: inline-block;
-	padding-left: 15px;
-
 }
 
 .main-navigation a:hover {
@@ -200,38 +196,52 @@ header {
     letter-spacing: 0.2em;
 }
 
+.header-center {
+	width: 275px;
+ }
+
 .header-center ul {
 	padding-left: 0;
 }
 
+.user-navigation {
+	display: flex;
+	justify-content: flex-start;
+}
+
+
 .site-navigation {
-	padding-top: 25px;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .site-navigation li {
 	display: inline-block;
-	padding-right: 35px;
 }
 
 .header-right {
-	width: 200px;
+	width: 260px;
 }
 
 .header-right ul {
 	padding-left: 0;
 }
 
-.help-navigation li {
-	display: inline-block;
+.help-navigation {
+	display: flex;
+	justify-content: flex-end;
 }
 
-.help-navigation li:first-child {
-	padding-right: 40px;
+.help-navigation li {
+	display: inline-block;
+	padding-left: 40px;
 }
 
 .header-contacts {
-	float: right;
-	padding-top: 10px;
+	padding-top: 20px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .visually-hidden {
